@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack_suola_04_step6
+  m_Shader: {fileID: 4800000, guid: 40d5c52b4a343544baa983a9994f394a, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 4382f6601f89bfd4cb2d698d286e541e, type: 3}
+          m_Scale: {x: 4, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 6ddf3e6ee3f4b3849a1b8680b0f1340a, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DissolveTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 4c5e3077a45667e49b8eb3594e3f9dea, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Mask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _AlphaCon
+        second: 1
+      data:
+        first:
+          name: _Alpha
+        second: 1
+      data:
+        first:
+          name: _Dissolve
+        second: -.00999999978
+      data:
+        first:
+          name: _DissolveSpeed
+        second: 1
+      data:
+        first:
+          name: _FadeOutDistNear
+        second: 10
+      data:
+        first:
+          name: _FadeOutDistFar
+        second: 10000
+      data:
+        first:
+          name: _BumpAmt
+        second: 10
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Alpha
+        second: {r: 1, g: .208924904, b: .117647052, a: 1}
+      data:
+        first:
+          name: _MainColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _UvOffset
+        second: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Ai_Monster.xml-->
+<behavior name="Ai_Monster" agenttype="ActorAI" version="5">
+  <node class="Selector" id="0">
+    <node class="Sequence" id="1">
+      <node class="Condition" id="4">
+        <property Operator="Equal" />
+        <property Opl="Self.ActorAI::Ai_SelectEnemy()" />
+        <property Opr="const bool true" />
+      </node>
+      <node class="Selector" id="5">
+        <node class="Condition" id="3">
+          <property Operator="Equal" />
+          <property Opl="Self.ActorAI::Ai_SelectSkill()" />
+          <property Opr="const bool true" />
+        </node>
+        <node class="Action" id="8">
+          <property Method="Self.ActorAI::Ai_MoveToEnemy()" />
+          <property ResultOption="BT_SUCCESS" />
+        </node>
+      </node>
+      <node class="Action" id="6">
+        <property Method="Self.ActorAI::Ai_Attack()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+    </node>
+    <node class="Sequence" id="2">
+      <node class="Action" id="7">
+        <property Method="Self.ActorAI::Ai_SelectEnemy()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+    </node>
+  </node>
+</behavior>

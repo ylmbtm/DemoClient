@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 33: {fileID: 3300000}
+  - 23: {fileID: 2300000}
+  m_Layer: 0
+  m_Name: terrain_section03_guanka05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: -.707106829, y: -6.18172464e-08, z: -6.18172464e-08, w: .707106829}
+  m_LocalPosition: {x: -8.61928177, y: 10.0646477, z: 20.6039906}
+  m_LocalScale: {x: .800000012, y: .800000012, z: .800000012}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!23 &2300000
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 0
+  m_LightmapTilingOffset: {x: .725585938, y: .725585938, z: -.00283432007, w: -.00283432007}
+  m_Materials:
+  - {fileID: 2100000, guid: 87e2b92bfb4aa5f4c801a1be5e3a746d, type: 2}
+  - {fileID: 2100000, guid: 45db15235b85f074bb48260a521aa3b4, type: 2}
+  - {fileID: 2100000, guid: 5e3ba3b5049f4d144b8c59fed79f267e, type: 2}
+  - {fileID: 2100000, guid: 011ff770d4721eb4da4467d652aa20ff, type: 2}
+  - {fileID: 2100000, guid: 1af6f35a2116aeb409710e8732eb2f11, type: 2}
+  - {fileID: 2100000, guid: aba23f9794c072f4c9f800600a1ca31a, type: 2}
+  - {fileID: 2100000, guid: f6251eae46de64f42979c624930fd520, type: 2}
+  - {fileID: 2100000, guid: 7e2953572ea04e246ab4f56ee93f8261, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Mesh: {fileID: 4300000, guid: 2b0f7a0c6ed7abf4bb806f626cfc7b6d, type: 3}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

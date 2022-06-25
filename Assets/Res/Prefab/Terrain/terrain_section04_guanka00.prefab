@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 33: {fileID: 3300000}
+  - 23: {fileID: 2300000}
+  m_Layer: 0
+  m_Name: terrain_section04_guanka00
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: 4.40279007, y: 7.82814407, z: .494716644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!23 &2300000
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 0
+  m_LightmapTilingOffset: {x: 1, y: 1, z: -.00390625, w: -.00390625}
+  m_Materials:
+  - {fileID: 2100000, guid: 7ac559091543e7e4c97bf6cec8c5cfe9, type: 2}
+  - {fileID: 2100000, guid: 31c1837d312275d40a06569b70408d59, type: 2}
+  - {fileID: 2100000, guid: 578f3a99ea2a1c9418dba3687eae23bb, type: 2}
+  - {fileID: 2100000, guid: e69ba997eb2a1304799ea0b9458d505d, type: 2}
+  - {fileID: 2100000, guid: 568d6deedbe383340bbf68f84b1fe823, type: 2}
+  - {fileID: 2100000, guid: 2a3dc365bdb616745a16d53fdc0d99f1, type: 2}
+  - {fileID: 2100000, guid: 10c40faeeea43a34b8931f09749bc5e4, type: 2}
+  - {fileID: 2100000, guid: 184698e0891ac184fbc995132499d84b, type: 2}
+  - {fileID: 2100000, guid: 99566699c267f8e4580703b07dc57cfc, type: 2}
+  - {fileID: 2100000, guid: dd6f12479dfaa71418639c11d99b316d, type: 2}
+  - {fileID: 2100000, guid: 23d848dbebb66a84183d689a32f900ca, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Mesh: {fileID: 4300000, guid: 476a2d17ae0714042941f2bf634bbc27, type: 3}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

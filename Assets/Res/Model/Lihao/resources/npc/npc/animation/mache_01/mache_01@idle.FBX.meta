@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: 731fb34422f2ad84ca3dc8cc1a409efe
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bone_cheban
+    100002: Bone_chelun
+    100004: Bone_guaxi_001
+    100006: Bone_guaxi_002
+    100008: Bone_guaxi_003
+    100010: Bone_guaxi_004
+    100012: Bone_jiangsheng_L
+    100014: Bone_jiangsheng_R
+    100016: Bone_mabei
+    100018: Bone_wujian_001
+    100020: Bone_wujian_002
+    100022: BP_Buff
+    100024: BP_Head
+    100026: BP_L_Foot
+    100028: BP_L_Foot01
+    100030: BP_L_Hand
+    100032: BP_R_Hand
+    100034: BP_Spine
+    100036: BP_Step
+    100038: BP_Step_mache
+    100040: Head
+    100042: L_Calf
+    100044: L_Clavicle
+    100046: L_Finger0
+    100048: L_Foot
+    100050: L_Forearm
+    100052: L_Hand
+    100054: L_HorseLink
+    100056: L_Thigh
+    100058: L_Toe0
+    100060: L_UpperArm
+    100062: //RootNode
+    100064: Neck
+    100066: Neck1
+    100068: Pelvis
+    100070: R_Calf
+    100072: R_Clavicle
+    100074: R_Finger0
+    100076: R_Foot
+    100078: R_Forearm
+    100080: R_Hand
+    100082: R_HorseLink
+    100084: R_Thigh
+    100086: R_Toe0
+    100088: R_UpperArm
+    100090: root
+    100092: Spine
+    100094: Spine1
+    100096: Spine2
+    100098: Xtra01
+    100100: Xtra02
+    100102: Xtra03
+    100104: Xtra0302
+    100106: Xtra0303
+    400000: Bone_cheban
+    400002: Bone_chelun
+    400004: Bone_guaxi_001
+    400006: Bone_guaxi_002
+    400008: Bone_guaxi_003
+    400010: Bone_guaxi_004
+    400012: Bone_jiangsheng_L
+    400014: Bone_jiangsheng_R
+    400016: Bone_mabei
+    400018: Bone_wujian_001
+    400020: Bone_wujian_002
+    400022: BP_Buff
+    400024: BP_Head
+    400026: BP_L_Foot
+    400028: BP_L_Foot01
+    400030: BP_L_Hand
+    400032: BP_R_Hand
+    400034: BP_Spine
+    400036: BP_Step
+    400038: BP_Step_mache
+    400040: Head
+    400042: L_Calf
+    400044: L_Clavicle
+    400046: L_Finger0
+    400048: L_Foot
+    400050: L_Forearm
+    400052: L_Hand
+    400054: L_HorseLink
+    400056: L_Thigh
+    400058: L_Toe0
+    400060: L_UpperArm
+    400062: //RootNode
+    400064: Neck
+    400066: Neck1
+    400068: Pelvis
+    400070: R_Calf
+    400072: R_Clavicle
+    400074: R_Finger0
+    400076: R_Foot
+    400078: R_Forearm
+    400080: R_Hand
+    400082: R_HorseLink
+    400084: R_Thigh
+    400086: R_Toe0
+    400088: R_UpperArm
+    400090: root
+    400092: Spine
+    400094: Spine1
+    400096: Spine2
+    400098: Xtra01
+    400100: Xtra02
+    400102: Xtra03
+    400104: Xtra0302
+    400106: Xtra0303
+    7400000: idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BP_Buff
+        weight: 1
+      - path: BP_Step
+        weight: 1
+      - path: BP_Step/BP_Step_mache
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban/Bone_guaxi_001
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban/Bone_guaxi_002
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban/Bone_guaxi_003
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban/Bone_guaxi_004
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban/Bone_jiangsheng_L
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban/Bone_jiangsheng_R
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban/Bone_wujian_001
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_cheban/Bone_wujian_002
+        weight: 1
+      - path: BP_Step/BP_Step_mache/Bone_chelun
+        weight: 1
+      - path: BP_Step/root
+        weight: 1
+      - path: BP_Step/root/Pelvis
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Bone_mabei
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/L_Thigh
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/L_Thigh/L_Calf
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/L_Thigh/L_Calf/L_HorseLink
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/L_Thigh/L_Calf/L_HorseLink/L_Foot
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/L_Thigh/L_Calf/L_HorseLink/L_Foot/BP_L_Foot
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/L_Thigh/L_Calf/L_HorseLink/L_Foot/L_Toe0
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/R_Thigh
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/R_Thigh/R_Calf
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/R_Thigh/R_Calf/R_HorseLink
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/R_Thigh/R_Calf/R_HorseLink/R_Foot
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/R_Thigh/R_Calf/R_HorseLink/R_Foot/BP_L_Foot01
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/R_Thigh/R_Calf/R_HorseLink/R_Foot/R_Toe0
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/BP_Spine
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/L_Clavicle
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/L_Clavicle/L_UpperArm
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/L_Clavicle/L_UpperArm/L_Forearm
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/L_Clavicle/L_UpperArm/L_Forearm/L_Hand
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/L_Clavicle/L_UpperArm/L_Forearm/L_Hand/L_Finger0
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/L_Clavicle/L_UpperArm/L_Forearm/L_Hand/L_Finger0/BP_L_Hand
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/Neck1
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/Neck1/Head
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/Neck1/Head/BP_Head
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/Neck1/Head/Xtra01
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/Neck1/Head/Xtra02
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/R_Clavicle
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/R_Clavicle/R_UpperArm
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/R_Clavicle/R_UpperArm/R_Forearm
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/R_Clavicle/R_UpperArm/R_Forearm/R_Hand
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/R_Clavicle/R_UpperArm/R_Forearm/R_Hand/R_Finger0
+        weight: 1
+      - path: BP_Step/root/Pelvis/Spine/Spine1/Spine2/Neck/R_Clavicle/R_UpperArm/R_Forearm/R_Hand/R_Finger0/BP_R_Hand
+        weight: 1
+      - path: BP_Step/root/Pelvis/Xtra03
+        weight: 1
+      - path: BP_Step/root/Pelvis/Xtra03/Xtra0302
+        weight: 1
+      - path: BP_Step/root/Pelvis/Xtra03/Xtra0302/Xtra0303
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b0cdfa803c3478e40ba9c67a063eea8f,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 

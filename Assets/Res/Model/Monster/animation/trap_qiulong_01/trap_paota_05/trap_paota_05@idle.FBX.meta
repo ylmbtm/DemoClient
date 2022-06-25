@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: 71490e3fce681fc4fb39e0ab15c423c2
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bone_jianshi01
+    100002: Bone_jianshi02
+    100004: Bone_jianshi03
+    100006: Bone_jianshi04
+    100008: Bone_zhuanta
+    100010: BP_Step
+    100012: //RootNode
+    100014: trap_paota_04_dizuo
+    100016: trap_paota_05
+    400000: Bone_jianshi01
+    400002: Bone_jianshi02
+    400004: Bone_jianshi03
+    400006: Bone_jianshi04
+    400008: Bone_zhuanta
+    400010: BP_Step
+    400012: //RootNode
+    400014: trap_paota_04_dizuo
+    400016: trap_paota_05
+    2300000: trap_paota_04_dizuo
+    3300000: trap_paota_04_dizuo
+    4300000: trap_paota_04_dizuo
+    4300002: trap_paota_05
+    7400000: idle
+    9500000: //RootNode
+    13700000: trap_paota_05
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BP_Step
+        weight: 1
+      - path: BP_Step/Bone_zhuanta
+        weight: 1
+      - path: BP_Step/Bone_zhuanta/Bone_jianshi01
+        weight: 1
+      - path: BP_Step/Bone_zhuanta/Bone_jianshi02
+        weight: 1
+      - path: BP_Step/Bone_zhuanta/Bone_jianshi03
+        weight: 1
+      - path: BP_Step/Bone_zhuanta/Bone_jianshi04
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: f310278ffd56d4843a871def0e17ca9a,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 

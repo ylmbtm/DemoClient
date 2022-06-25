@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: worldmap_water04
+  m_Shader: {fileID: 4800000, guid: 31b449b7cc687b74194394d5941fb751, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 30f7241783632a240b50958c3310f913, type: 3}
+          m_Scale: {x: 10, y: 10}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaterTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 14c92cf6875d9ba489fc7218683c075c, type: 3}
+          m_Scale: {x: 4, y: 4}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _High
+        second:
+          m_Texture: {fileID: 2800000, guid: 9bb694ea09f35244ead002f691bca6cd, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MainTex0
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 25, y: 25}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MainTex1
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 25, y: 25}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _RefractTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: .200000003, y: .200000003}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 05b622eb68c146f47b4af48abdd8d0a5, type: 3}
+          m_Scale: {x: 3, y: 3}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BordeTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 3.5, y: 3.5}
+          m_Offset: {x: -.449999988, y: -.219999999}
+    m_Floats:
+      data:
+        first:
+          name: _Tiling
+        second: .129464298
+      data:
+        first:
+          name: _Light
+        second: 1.60714281
+    m_Colors:
+      data:
+        first:
+          name: _LightPos
+        second: {r: -.529999971, g: -2.97000003, b: .340000004, a: 0}
+      data:
+        first:
+          name: _Color
+        second: {r: .103806213, g: .311705112, b: .352941155, a: 1}
+      data:
+        first:
+          name: _UvOffset
+        second: {r: .00999999978, g: .00999999978, b: .00999999978, a: .00999999978}
+      data:
+        first:
+          name: _Color0
+        second: {r: .786764741, g: .9842695, b: 1, a: .490196079}
+      data:
+        first:
+          name: _Color1
+        second: {r: .132461086, g: .450998485, b: .514705896, a: .474509805}
+      data:
+        first:
+          name: _Specular
+        second: {r: .243137255, g: .243137255, b: .243137255, a: 0}
+      data:
+        first:
+          name: _Pass
+        second: {r: 1, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _BordeColor
+        second: {r: .250980407, g: .65882355, b: .623529434, a: .450980395}

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: xuanren_1
+  m_Shader: {fileID: 4800000, guid: a6d1da559915a8f408761b2ac95412d5, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 355ef60c505f1c047bbcc766270ab626, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: d43d82e09bc63ac47899dbcd8f4d55e6, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DissolveTex
+        second:
+          m_Texture: {fileID: 2800000, guid: d43d82e09bc63ac47899dbcd8f4d55e6, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Mask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NoiseTex
+        second:
+          m_Texture: {fileID: 2800000, guid: d43d82e09bc63ac47899dbcd8f4d55e6, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _RenderTexture
+        second:
+          m_Texture: {fileID: 8400000, guid: 7a43b9455dadb5a44a5f84f86d2d29ec, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Dissolve
+        second: -.00999999978
+      data:
+        first:
+          name: _DissolveSpeed
+        second: 5
+      data:
+        first:
+          name: _Ligth
+        second: 1
+      data:
+        first:
+          name: _BumpAmt
+        second: 0
+      data:
+        first:
+          name: _Dissove
+        second: 0
+      data:
+        first:
+          name: _DissoveSpeed
+        second: 5
+      data:
+        first:
+          name: strength
+        second: .0399999991
+      data:
+        first:
+          name: transparency
+        second: .00999999978
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Alpha
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _MainColor
+        second: {r: 1, g: 1, b: 1, a: 1}

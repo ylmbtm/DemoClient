@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack1_cike_01_step1
+  m_Shader: {fileID: 4800000, guid: a6d1da559915a8f408761b2ac95412d5, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 1f16e45eb37a6784982e408f2a92ef4d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskTex
+        second:
+          m_Texture: {fileID: 2800000, guid: cc6f3c9f74c9cd64ba44e856f2893339, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DissolveTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 600e7422d131b4c4bafb562384dfa070, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Mask
+        second:
+          m_Texture: {fileID: 2800000, guid: 04da1f22df6023948b96b22bb81aaf03, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Dissolve
+        second: -.00999999978
+      data:
+        first:
+          name: _DissolveSpeed
+        second: 1
+      data:
+        first:
+          name: _Ligth
+        second: 3
+      data:
+        first:
+          name: _InvFade
+        second: 1
+      data:
+        first:
+          name: _Dissove
+        second: .572692335
+      data:
+        first:
+          name: _DissoveSpeed
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Alpha
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _MainColor
+        second: {r: .145328745, g: .41427049, b: .941176474, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}

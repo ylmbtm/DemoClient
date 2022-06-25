@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 9f1173d2028daf142a52a10f88125e68
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bone01
+    100004: Bone02
+    100006: Bone03
+    100008: Bone04
+    100010: Bone05
+    100012: Bone06
+    100014: Bone07
+    100016: Bone08
+    100018: Bone09
+    100020: Bone10
+    100022: Bone11
+    100024: Bone12
+    100026: Bone13
+    100028: Bone14
+    100030: Bone15
+    100032: Bone16
+    100034: Bone17
+    100036: Bone18
+    100038: Bone19
+    100040: Bone20
+    100042: Bone21
+    100044: Box01
+    100046: BP_Step
+    100048: Object06
+    100050: Object07
+    100052: Object07 1
+    100054: Object08
+    100056: Object08 1
+    100058: Object10
+    100060: Object11
+    100062: Object12
+    100064: Object13
+    100066: Point01
+    100068: Point02
+    100070: Point03
+    100072: Point04
+    100074: zhixin
+    400000: //RootNode
+    400002: Bone01
+    400004: Bone02
+    400006: Bone03
+    400008: Bone04
+    400010: Bone05
+    400012: Bone06
+    400014: Bone07
+    400016: Bone08
+    400018: Bone09
+    400020: Bone10
+    400022: Bone11
+    400024: Bone12
+    400026: Bone13
+    400028: Bone14
+    400030: Bone15
+    400032: Bone16
+    400034: Bone17
+    400036: Bone18
+    400038: Bone19
+    400040: Bone20
+    400042: Bone21
+    400044: Box01
+    400046: BP_Step
+    400048: Object06
+    400050: Object07
+    400052: Object07 1
+    400054: Object08
+    400056: Object08 1
+    400058: Object10
+    400060: Object11
+    400062: Object12
+    400064: Object13
+    400066: Point01
+    400068: Point02
+    400070: Point03
+    400072: Point04
+    400074: zhixin
+    2300000: Box01
+    3300000: Box01
+    4300000: Object06
+    4300002: Object10
+    4300004: Object11
+    4300006: Object12
+    4300008: Object13
+    4300010: Box01
+    7400000: close
+    7400002: open
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Object06
+    13700002: Object10
+    13700004: Object11
+    13700006: Object12
+    13700008: Object13
+    13700010: Box01
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Box01
+        weight: 1
+      - path: BP_Step
+        weight: 1
+      - path: BP_Step/zhixin
+        weight: 1
+      - path: BP_Step/zhixin/Bone05
+        weight: 1
+      - path: BP_Step/zhixin/Bone06
+        weight: 1
+      - path: BP_Step/zhixin/Bone07
+        weight: 1
+      - path: BP_Step/zhixin/Bone08
+        weight: 1
+      - path: BP_Step/zhixin/Bone21
+        weight: 1
+      - path: BP_Step/zhixin/Point01
+        weight: 1
+      - path: BP_Step/zhixin/Point01/Bone01
+        weight: 1
+      - path: BP_Step/zhixin/Point01/Bone02
+        weight: 1
+      - path: BP_Step/zhixin/Point01/Bone03
+        weight: 1
+      - path: BP_Step/zhixin/Point01/Bone04
+        weight: 1
+      - path: BP_Step/zhixin/Point02
+        weight: 1
+      - path: BP_Step/zhixin/Point02/Bone09
+        weight: 1
+      - path: BP_Step/zhixin/Point02/Bone10
+        weight: 1
+      - path: BP_Step/zhixin/Point02/Bone11
+        weight: 1
+      - path: BP_Step/zhixin/Point02/Bone12
+        weight: 1
+      - path: BP_Step/zhixin/Point03
+        weight: 1
+      - path: BP_Step/zhixin/Point03/Bone13
+        weight: 1
+      - path: BP_Step/zhixin/Point03/Bone14
+        weight: 1
+      - path: BP_Step/zhixin/Point03/Bone15
+        weight: 1
+      - path: BP_Step/zhixin/Point03/Bone16
+        weight: 1
+      - path: BP_Step/zhixin/Point04
+        weight: 1
+      - path: BP_Step/zhixin/Point04/Bone17
+        weight: 1
+      - path: BP_Step/zhixin/Point04/Bone18
+        weight: 1
+      - path: BP_Step/zhixin/Point04/Bone19
+        weight: 1
+      - path: BP_Step/zhixin/Point04/Bone20
+        weight: 1
+      - path: Object06
+        weight: 1
+      - path: Object07
+        weight: 1
+      - path: Object07 1
+        weight: 1
+      - path: Object08
+        weight: 1
+      - path: Object08 1
+        weight: 1
+      - path: Object10
+        weight: 1
+      - path: Object11
+        weight: 1
+      - path: Object12
+        weight: 1
+      - path: Object13
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: close
+      takeName: Take 001
+      firstFrame: 45
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Box01
+        weight: 1
+      - path: BP_Step
+        weight: 1
+      - path: BP_Step/zhixin
+        weight: 1
+      - path: BP_Step/zhixin/Bone05
+        weight: 1
+      - path: BP_Step/zhixin/Bone06
+        weight: 1
+      - path: BP_Step/zhixin/Bone07
+        weight: 1
+      - path: BP_Step/zhixin/Bone08
+        weight: 1
+      - path: BP_Step/zhixin/Bone21
+        weight: 1
+      - path: BP_Step/zhixin/Point01
+        weight: 1
+      - path: BP_Step/zhixin/Point01/Bone01
+        weight: 1
+      - path: BP_Step/zhixin/Point01/Bone02
+        weight: 1
+      - path: BP_Step/zhixin/Point01/Bone03
+        weight: 1
+      - path: BP_Step/zhixin/Point01/Bone04
+        weight: 1
+      - path: BP_Step/zhixin/Point02
+        weight: 1
+      - path: BP_Step/zhixin/Point02/Bone09
+        weight: 1
+      - path: BP_Step/zhixin/Point02/Bone10
+        weight: 1
+      - path: BP_Step/zhixin/Point02/Bone11
+        weight: 1
+      - path: BP_Step/zhixin/Point02/Bone12
+        weight: 1
+      - path: BP_Step/zhixin/Point03
+        weight: 1
+      - path: BP_Step/zhixin/Point03/Bone13
+        weight: 1
+      - path: BP_Step/zhixin/Point03/Bone14
+        weight: 1
+      - path: BP_Step/zhixin/Point03/Bone15
+        weight: 1
+      - path: BP_Step/zhixin/Point03/Bone16
+        weight: 1
+      - path: BP_Step/zhixin/Point04
+        weight: 1
+      - path: BP_Step/zhixin/Point04/Bone17
+        weight: 1
+      - path: BP_Step/zhixin/Point04/Bone18
+        weight: 1
+      - path: BP_Step/zhixin/Point04/Bone19
+        weight: 1
+      - path: BP_Step/zhixin/Point04/Bone20
+        weight: 1
+      - path: Object06
+        weight: 1
+      - path: Object07
+        weight: 1
+      - path: Object07 1
+        weight: 1
+      - path: Object08
+        weight: 1
+      - path: Object08 1
+        weight: 1
+      - path: Object10
+        weight: 1
+      - path: Object11
+        weight: 1
+      - path: Object12
+        weight: 1
+      - path: Object13
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

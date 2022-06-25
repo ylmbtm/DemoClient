@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: wayPoint_line
+  m_Shader: {fileID: 4800000, guid: 78b3a2bdc1e364c40a4b2c3b0522a274, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 79892a9a15bc21642ba9433b7efbea9c, type: 3}
+          m_Scale: {x: .0500000007, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 75d833fcd7cf7d84281f93a2ce9ee3b8, type: 3}
+          m_Scale: {x: 1.20000005, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+      data:
+        first:
+          name: _FadeOutDistNear
+        second: 10
+      data:
+        first:
+          name: _FadeOutDistFar
+        second: 10000
+      data:
+        first:
+          name: _Alpha
+        second: .589285731
+      data:
+        first:
+          name: _AlphaCon
+        second: 1
+      data:
+        first:
+          name: _BlinkingTimeOffsScale
+        second: 5
+      data:
+        first:
+          name: _Multiplier
+        second: 1
+      data:
+        first:
+          name: _ScrollX
+        second: 2
+      data:
+        first:
+          name: _ScrollY
+        second: 0
+      data:
+        first:
+          name: _Scroll2X
+        second: 2
+      data:
+        first:
+          name: _Scroll2Y
+        second: 0
+      data:
+        first:
+          name: _MMultiplier
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .786764741, g: .786764741, b: .786764741, a: 1}
+      data:
+        first:
+          name: _Alpha
+        second: {r: .5, g: .5, b: .5, a: .193638384}
+      data:
+        first:
+          name: _HitColor
+        second: {r: .985294104, g: .985294104, b: .985294104, a: 0}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}

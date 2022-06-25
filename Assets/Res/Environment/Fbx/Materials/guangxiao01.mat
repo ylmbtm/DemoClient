@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: guangxiao01
+  m_Shader: {fileID: 4800000, guid: 8d642a6c98d7d054f8cb28b4a2f2e998, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 5c496b3bdedf7474e9b48ffa122e3f8f, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _FadeOutDistNear
+        second: 20
+      data:
+        first:
+          name: _FadeOutDistFar
+        second: 10000
+      data:
+        first:
+          name: _BlinkingTimeOffsScale
+        second: 42.9000015
+      data:
+        first:
+          name: _Multiplier
+        second: .600000024
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0, g: .359077215, b: .713235259, a: 1}

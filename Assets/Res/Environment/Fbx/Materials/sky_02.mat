@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: sky_02
+  m_Shader: {fileID: 4800000, guid: 11f959f116ce5ee499ec103e3235eba4, type: 3}
+  m_ShaderKeywords: _SUNDISK_HIGH_QUALITY
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BackTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 2800000, guid: 88a93adc35de60c4b9fa863d53daa334, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DownTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FogTex:
+        m_Texture: {fileID: 2800000, guid: d3fc4c6c8e1790b45aba3dc4ce0248b1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FrontTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Illum:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LeftTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 88a93adc35de60c4b9fa863d53daa334, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: b8335832164a4e741811d93c102ed99b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PassTex:
+        m_Texture: {fileID: 2800000, guid: 2b3e382abfe67a44383bfab7f72943b9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RightTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TapLowBackground:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex:
+        m_Texture: {fileID: 8900000, guid: c1ad01f33e5dc4d40ae09cf74ba9d47f, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UpTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AMultiplierCloud: 0.5
+    - _Alpha: 1
+    - _AlphaCon: 1
+    - _AtmosphereThickness: 1
+    - _Contrast: 1
+    - _Dissolve: 0
+    - _DissolveSpeed: 5
+    - _EmissionLM: 0
+    - _Exposure: 1
+    - _GrayscaleToAlpha: 0
+    - _Ligth: 1
+    - _RimPower: 0.3
+    - _Rotation: 0
+    - _Scroll2X: 1
+    - _Scroll2Y: 0
+    - _ScrollX: 1
+    - _ScrollY: 0
+    - _Shininess: 0.7
+    - _SunDisk: 2
+    - _SunSize: 0.04
+    m_Colors:
+    - _Alpha: {r: 0.9264706, g: 0.9264706, b: 0.9264706, a: 0.5019608}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _GlossColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GroundColor: {r: 0.369, g: 0.349, b: 0.341, a: 1}
+    - _HitColor: {r: 0.8088235, g: 0.8088235, b: 0.8088235, a: 0}
+    - _MainColor: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - _Pass: {r: 0, g: 0, b: 0, a: 0}
+    - _RimColor: {r: 0.26, g: 0.19, b: 0.16, a: 0}
+    - _SkyTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}

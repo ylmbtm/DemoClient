@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: chengjie_gai_2
+  m_Shader: {fileID: 4800000, guid: 18d5af77a7ff70647b081d0ceb1f4bac, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 9180c1ad73dd06942bed955743b5df9e, type: 3}
+          m_Scale: {x: 4, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 89fd35faf3bb0414ea9a9ba53dd3bc6b, type: 3}
+          m_Scale: {x: 4, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _ScrollX
+        second: 2
+      data:
+        first:
+          name: _ScrollY
+        second: -.5
+      data:
+        first:
+          name: _Scroll2X
+        second: -20
+      data:
+        first:
+          name: _Scroll2Y
+        second: -.300000012
+      data:
+        first:
+          name: _MMultiplier
+        second: 2
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .75, g: .727941155, b: .727941155, a: 1}

@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 894ef41f048141249be23430152c86f9
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bone006
+    100002: Bone007
+    100004: Bone008
+    100006: Bone009
+    100008: Bone010
+    100010: Bone011
+    100012: BP_R_Weapon
+    100014: cike_1_weapon_r
+    100016: //RootNode
+    100018: Plane002
+    100020: Point001
+    100022: Point002
+    100024: Point003
+    100026: Point004
+    100028: Point005
+    100030: Point006
+    100032: R_Bone004
+    400000: Bone006
+    400002: Bone007
+    400004: Bone008
+    400006: Bone009
+    400008: Bone010
+    400010: Bone011
+    400012: BP_R_Weapon
+    400014: cike_1_weapon_r
+    400016: //RootNode
+    400018: Plane002
+    400020: Point001
+    400022: Point002
+    400024: Point003
+    400026: Point004
+    400028: Point005
+    400030: Point006
+    400032: R_Bone004
+    4300000: Plane002
+    4300002: cike_1_weapon_r
+    7400000: qicheng_weapon_attack_02
+    7400002: qicheng_weapon_attack_01
+    7400004: qicheng_weapon_attack_03
+    7400006: idle
+    9500000: //RootNode
+    13700000: cike_1_weapon_r
+    13700002: Plane002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: qicheng_weapon_attack_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cike_1_weapon_r
+        weight: 1
+      - path: Plane002
+        weight: 1
+      - path: R_Bone004
+        weight: 1
+      - path: R_Bone004/BP_R_Weapon
+        weight: 1
+      - path: R_Bone004/Point001
+        weight: 1
+      - path: R_Bone004/Point001/Bone006
+        weight: 1
+      - path: R_Bone004/Point001/Point002
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Bone007
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Bone008
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Bone009
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Bone010
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Point006
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Point006/Bone011
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: qicheng_weapon_attack_02
+      takeName: Take 001
+      firstFrame: 13
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cike_1_weapon_r
+        weight: 1
+      - path: Plane002
+        weight: 1
+      - path: R_Bone004
+        weight: 1
+      - path: R_Bone004/BP_R_Weapon
+        weight: 1
+      - path: R_Bone004/Point001
+        weight: 1
+      - path: R_Bone004/Point001/Bone006
+        weight: 1
+      - path: R_Bone004/Point001/Point002
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Bone007
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Bone008
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Bone009
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Bone010
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Point006
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Point006/Bone011
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: qicheng_weapon_attack_03
+      takeName: Take 001
+      firstFrame: 24
+      lastFrame: 58
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cike_1_weapon_r
+        weight: 1
+      - path: Plane002
+        weight: 1
+      - path: R_Bone004
+        weight: 1
+      - path: R_Bone004/BP_R_Weapon
+        weight: 1
+      - path: R_Bone004/Point001
+        weight: 1
+      - path: R_Bone004/Point001/Bone006
+        weight: 1
+      - path: R_Bone004/Point001/Point002
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Bone007
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Bone008
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Bone009
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Bone010
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Point006
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Point006/Bone011
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 61
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cike_1_weapon_r
+        weight: 1
+      - path: Plane002
+        weight: 1
+      - path: R_Bone004
+        weight: 1
+      - path: R_Bone004/BP_R_Weapon
+        weight: 1
+      - path: R_Bone004/Point001
+        weight: 1
+      - path: R_Bone004/Point001/Bone006
+        weight: 1
+      - path: R_Bone004/Point001/Point002
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Bone007
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Bone008
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Bone009
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Bone010
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Point006
+        weight: 1
+      - path: R_Bone004/Point001/Point002/Point003/Point004/Point005/Point006/Bone011
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: R_Bone004
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

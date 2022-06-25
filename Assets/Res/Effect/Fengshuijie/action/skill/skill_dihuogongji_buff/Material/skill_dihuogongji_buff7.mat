@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: skill_dihuogongji_buff7
+  m_Shader: {fileID: 4800000, guid: 40d5c52b4a343544baa983a9994f394a, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 4d044deaa7aaf764c811b36ba43f0b7d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 676934a10095e0048b2e67c75df6cb1f, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DissolveTex
+        second:
+          m_Texture: {fileID: 2800000, guid: fee3fc8386f72984eace2c503a864092, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Mask
+        second:
+          m_Texture: {fileID: 2800000, guid: bfd98e9587a328c4c9db56ebb743b705, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _AlphaCon
+        second: 1
+      data:
+        first:
+          name: _Dissolve
+        second: -.00999999978
+      data:
+        first:
+          name: _DissolveSpeed
+        second: 1
+      data:
+        first:
+          name: _Ligth
+        second: 1.07692313
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Alpha
+        second: {r: 1, g: .682758629, b: 0, a: 1}
+      data:
+        first:
+          name: _MainColor
+        second: {r: 1, g: 0, b: 0, a: 1}

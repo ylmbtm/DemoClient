@@ -1,0 +1,965 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &106282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 411842}
+  - component: {fileID: 11406714}
+  m_Layer: 0
+  m_Name: Atlas_Raid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411842
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11406714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: eedf1471cc762a44f94ecaf3bfad4371, type: 2}
+  mSprites:
+  - name: 601
+    x: 574
+    y: 474
+    width: 184
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 5
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 602
+    x: 574
+    y: 2
+    width: 320
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 603
+    x: 896
+    y: 66
+    width: 120
+    height: 64
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 604
+    x: 896
+    y: 2
+    width: 124
+    height: 62
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 2
+    paddingTop: 1
+    paddingBottom: 1
+  - name: 605
+    x: 522
+    y: 203
+    width: 240
+    height: 64
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 606
+    x: 522
+    y: 269
+    width: 226
+    height: 52
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 6
+    paddingBottom: 6
+  - name: 608
+    x: 262
+    y: 380
+    width: 310
+    height: 119
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 609
+    x: 574
+    y: 84
+    width: 292
+    height: 117
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 610
+    x: 868
+    y: 132
+    width: 144
+    height: 35
+    borderLeft: 20
+    borderRight: 20
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 613
+    x: 574
+    y: 358
+    width: 128
+    height: 114
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 9
+    paddingBottom: 5
+  - name: 614
+    x: 2
+    y: 380
+    width: 128
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 615
+    x: 704
+    y: 358
+    width: 108
+    height: 108
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 616
+    x: 132
+    y: 380
+    width: 128
+    height: 127
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: R0
+    x: 392
+    y: 2
+    width: 128
+    height: 187
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: R1
+    x: 392
+    y: 191
+    width: 128
+    height: 185
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 1
+    paddingBottom: 1
+  - name: R2
+    x: 868
+    y: 169
+    width: 128
+    height: 187
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: R3
+    x: 262
+    y: 191
+    width: 128
+    height: 187
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: R4
+    x: 262
+    y: 2
+    width: 128
+    height: 187
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: R5
+    x: 132
+    y: 191
+    width: 128
+    height: 187
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: R6
+    x: 132
+    y: 2
+    width: 128
+    height: 187
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: R7
+    x: 2
+    y: 191
+    width: 128
+    height: 187
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: R8
+    x: 2
+    y: 2
+    width: 128
+    height: 187
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.size
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].name
+      value: 601
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].y
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].width
+      value: 192
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].height
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].paddingLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].paddingRight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].paddingTop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].paddingBottom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[1].name
+      value: 602
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[1].y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[1].width
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[1].height
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[0].x
+      value: 324
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[2].name
+      value: 603
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[2].x
+      value: 866
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[2].y
+      value: 549
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[2].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[2].height
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[3].x
+      value: 606
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[3].y
+      value: 576
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[6].x
+      value: 950
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[6].y
+      value: 171
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[6].width
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[6].height
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[7].name
+      value: 610
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[7].x
+      value: 174
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[7].y
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[7].width
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[7].height
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[8].name
+      value: 613
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[8].x
+      value: 606
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[8].y
+      value: 446
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[8].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[8].height
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[9].name
+      value: 614
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[9].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[9].y
+      value: 591
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[10].name
+      value: 615
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[10].x
+      value: 866
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[10].y
+      value: 615
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[11].name
+      value: 616
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[11].x
+      value: 736
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[11].y
+      value: 549
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[12].name
+      value: B1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[12].x
+      value: 950
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[12].y
+      value: 349
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[12].width
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[12].height
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[13].name
+      value: D1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[13].x
+      value: 541
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[13].y
+      value: 642
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[13].width
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[13].height
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[14].name
+      value: D2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[14].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[14].y
+      value: 721
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[15].name
+      value: D3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[15].y
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[16].name
+      value: D4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[16].x
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[16].y
+      value: 629
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[17].name
+      value: LF
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[17].x
+      value: 950
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[17].y
+      value: 237
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[18].name
+      value: MG1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[18].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[18].y
+      value: 422
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[19].name
+      value: MG2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[19].x
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[19].y
+      value: 271
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[20].name
+      value: MG3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[20].x
+      value: 492
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[20].y
+      value: 237
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[21].name
+      value: MG4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[21].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[21].y
+      value: 253
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[21].width
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[21].height
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[22].name
+      value: MG5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[22].x
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[22].y
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[23].name
+      value: MG6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[23].x
+      value: 518
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[23].y
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[24].name
+      value: MG7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[24].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[24].y
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[25].name
+      value: MG8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[25].x
+      value: 840
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[25].y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[26].name
+      value: R0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[26].x
+      value: 174
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[26].y
+      value: 499
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[26].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[26].height
+      value: 187
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[27].name
+      value: R1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[27].x
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[27].y
+      value: 440
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[27].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[27].height
+      value: 187
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[7].borderLeft
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[7].borderRight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[9].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[9].height
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[10].width
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[10].height
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[14].width
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[14].height
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[15].x
+      value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[15].width
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[15].height
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[22].width
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[22].height
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[23].width
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[23].height
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[28].name
+      value: R2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[28].x
+      value: 476
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[28].y
+      value: 406
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[29].name
+      value: R3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[29].x
+      value: 794
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[29].y
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[30].name
+      value: R4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[30].x
+      value: 664
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[30].y
+      value: 257
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[31].name
+      value: R5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[31].x
+      value: 820
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[31].y
+      value: 171
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[31].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[31].height
+      value: 187
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[32].name
+      value: R6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[32].x
+      value: 174
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[32].y
+      value: 310
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[32].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[32].height
+      value: 187
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[11].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[11].height
+      value: 127
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[16].width
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[16].height
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[17].width
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[17].height
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[24].width
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[24].height
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[25].width
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[25].height
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[33].name
+      value: R7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[33].x
+      value: 174
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[33].y
+      value: 121
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[33].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[33].height
+      value: 187
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[34].name
+      value: R8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[34].x
+      value: 690
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[34].y
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[34].width
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[34].height
+      value: 187
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 106282}
+  m_IsPrefabParent: 1
