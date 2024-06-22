@@ -7,276 +7,276 @@ using behaviac;
 
 public class ActorAI : behaviac.Agent, IActorComponent
 {
-	private Actor           m_Actor;
-	private ActorCommand    m_ActorCommand;
-	private ActorSkill      m_ActorSkill;
-	private float           m_LastTime = Time.realtimeSinceStartup;
+    private Actor           m_Actor;
+    private ActorCommand    m_ActorCommand;
+    private ActorSkill      m_ActorSkill;
+    private float           m_LastTime = Time.realtimeSinceStartup;
 
 
-	//ai 变量
-	private ActSkill m_CurSelSkill = null;
-	public void Initial(Actor actor)
-	{
-		this.m_Actor        = actor;
-		this.m_ActorCommand = actor.Get<ActorCommand>();
-		this.m_ActorSkill   = actor.Get<ActorSkill>();
+    //ai 变量
+    private ActSkill m_CurSelSkill = null;
+    public void Initial(Actor actor)
+    {
+        this.m_Actor        = actor;
+        this.m_ActorCommand = actor.Get<ActorCommand>();
+        this.m_ActorSkill   = actor.Get<ActorSkill>();
 
-		//主角对象，也不需要AI
-		if (m_Actor.GUID == GTData.Main.GUID)
-		{
-			return;
-		}
+        //主角对象，也不需要AI
+        if (m_Actor.GUID == GTData.Main.GUID)
+        {
+            return;
+        }
 
-		string strNodeName = "Ai_Pet";
-		if(m_Actor.Type == Protocol.EObjectType.OT_PET)
-		{
-			strNodeName = "Ai_Pet";
-		}
-		else if (m_Actor.Type == Protocol.EObjectType.OT_PARTNER)
-		{
-			strNodeName = "Ai_Partner";
-		}
-		else if (m_Actor.Type == Protocol.EObjectType.OT_MONSTER)
-		{
-			strNodeName = "Ai_Monster";
-		}
+        string strNodeName = "Ai_Pet";
+        if(m_Actor.Type == Protocol.EObjectType.OT_PET)
+        {
+            strNodeName = "Ai_Pet";
+        }
+        else if (m_Actor.Type == Protocol.EObjectType.OT_PARTNER)
+        {
+            strNodeName = "Ai_Partner";
+        }
+        else if (m_Actor.Type == Protocol.EObjectType.OT_MONSTER)
+        {
+            strNodeName = "Ai_Monster";
+        }
 
-		bool bRet = this.btload(strNodeName);
-		if (bRet)
-		{
-			this.btsetcurrent(strNodeName);
-		}
-	}
+        bool bRet = this.btload(strNodeName);
+        if (bRet)
+        {
+            this.btsetcurrent(strNodeName);
+        }
+    }
 
-	public void Execute()
-	{
-		//1s思考一次
-		if((Time.realtimeSinceStartup - m_LastTime) < 1)
-		{
-			return;
-		}
+    public void Execute()
+    {
+        //1s思考一次
+        if((Time.realtimeSinceStartup - m_LastTime) < 1)
+        {
+            return;
+        }
 
-		//控制不是自己, 不需要AI
-		if (m_Actor.ControlID != GTData.Main.GUID)
-		{
-			return;
-		}
+        //控制不是自己, 不需要AI
+        if (m_Actor.ControlID != GTData.Main.GUID)
+        {
+            return;
+        }
 
-		//主角对象，也不需要AI
-		if (m_Actor.GUID == GTData.Main.GUID)
-		{
-			return;
-		}
+        //主角对象，也不需要AI
+        if (m_Actor.GUID == GTData.Main.GUID)
+        {
+            return;
+        }
 
-		//己死亡也不需要AI
-		if(m_Actor.FSM == FSMState.FSM_DEAD)
-		{
-			return;
-		}
+        //己死亡也不需要AI
+        if(m_Actor.FSM == FSMState.FSM_DEAD)
+        {
+            return;
+        }
 
-		if( (m_Actor.Type == Protocol.EObjectType.OT_PET))
-		{
-			return;
-		}
-		m_LastTime = Time.realtimeSinceStartup;
-		//this.btexec();
-	}
+        if( (m_Actor.Type == Protocol.EObjectType.OT_PET))
+        {
+            return;
+        }
+        m_LastTime = Time.realtimeSinceStartup;
+        //this.btexec();
+    }
 
-	public void Release()
-	{
+    public void Release()
+    {
 
-	}
+    }
 
-	public bool Ai_SelectEnemy()
-	{
-		if (m_Actor.Target != null)
-		{
-			return true;
-		}
+    public bool Ai_SelectEnemy()
+    {
+        if (m_Actor.Target != null)
+        {
+            return true;
+        }
 
-		if((m_Actor.Type == Protocol.EObjectType.OT_PET) || (m_Actor.Type == Protocol.EObjectType.OT_PARTNER))
-		{
-			m_Actor.Target = m_Actor.Host.Target;
-			return true;
-		}
+        if((m_Actor.Type == Protocol.EObjectType.OT_PET) || (m_Actor.Type == Protocol.EObjectType.OT_PARTNER))
+        {
+            m_Actor.Target = m_Actor.Host.Target;
+            return true;
+        }
 
-		Actor selectTarget = m_Actor.GetTargetByPolicy(EAffect.Enem, ESelectTargetPolicy.TYPE_SELECT_BY_LESSDISTANCE);
-		if (selectTarget == null)
-		{
-			return false;
-		}
+        Actor selectTarget = m_Actor.GetTargetByPolicy(EAffect.Enem, ESelectTargetPolicy.TYPE_SELECT_BY_LESSDISTANCE);
+        if (selectTarget == null)
+        {
+            return false;
+        }
 
-		GTWorld.Instance.SetTarget(m_Actor, selectTarget);
+        GTWorld.Instance.SetTarget(m_Actor, selectTarget);
 
-		return true;
-	}
+        return true;
+    }
 
-	public bool Ai_HasEnemy()
-	{
-		if (m_Actor.Target != null)
-		{
-			return true;
-		}
+    public bool Ai_HasEnemy()
+    {
+        if (m_Actor.Target != null)
+        {
+            return true;
+        }
 
-		Actor selectTarget = m_Actor.GetTargetByPolicy(EAffect.Enem, ESelectTargetPolicy.TYPE_SELECT_BY_LESSDISTANCE);
-		if (selectTarget == null)
-		{
-			return false;
-		}
+        Actor selectTarget = m_Actor.GetTargetByPolicy(EAffect.Enem, ESelectTargetPolicy.TYPE_SELECT_BY_LESSDISTANCE);
+        if (selectTarget == null)
+        {
+            return false;
+        }
 
-		GTWorld.Instance.SetTarget(m_Actor, selectTarget);
+        GTWorld.Instance.SetTarget(m_Actor, selectTarget);
 
-		return true;
-	}
+        return true;
+    }
 
-	public bool Ai_SelectSkill()
-	{
-		m_CurSelSkill = null;
-		if (m_Actor.Target == null)
-		{
-			return false;
-		}
+    public bool Ai_SelectSkill()
+    {
+        m_CurSelSkill = null;
+        if (m_Actor.Target == null)
+        {
+            return false;
+        }
 
-		Vector3 pos = m_Actor.Target.Pos;
-		Vector3 dir = m_Actor.Pos - pos;
-		dir.y = 0;
-		float dirSqr = dir.sqrMagnitude;
+        Vector3 pos = m_Actor.Target.Pos;
+        Vector3 dir = m_Actor.Pos - pos;
+        dir.y = 0;
+        float dirSqr = dir.sqrMagnitude;
 
-		for (int i = 0; i < m_ActorSkill.SpecialSkills.Count; i++)
-		{
-			ActSkill skill = m_ActorSkill.SpecialSkills[i];
+        for (int i = 0; i < m_ActorSkill.SpecialSkills.Count; i++)
+        {
+            ActSkill skill = m_ActorSkill.SpecialSkills[i];
 
-			if (skill.CastDistance * skill.CastDistance > dirSqr)
-			{
-				m_CurSelSkill = skill;
-				return true;
-			}
-		}
+            if (skill.CastDistance * skill.CastDistance > dirSqr)
+            {
+                m_CurSelSkill = skill;
+                return true;
+            }
+        }
 
-		if (m_ActorSkill.GeneralSkills.Count > 0)
-		{
-			ActSkill skill = m_ActorSkill.GeneralSkills[0];
-			if (skill.CastDistance * skill.CastDistance > dirSqr)
-			{
-				m_CurSelSkill = skill;
-				return true;
-			}
-		}
+        if (m_ActorSkill.GeneralSkills.Count > 0)
+        {
+            ActSkill skill = m_ActorSkill.GeneralSkills[0];
+            if (skill.CastDistance * skill.CastDistance > dirSqr)
+            {
+                m_CurSelSkill = skill;
+                return true;
+            }
+        }
 
-		return false;
-	}
+        return false;
+    }
 
-	public bool Ai_HasAvailableSkill()
-	{
-		if(m_CurSelSkill == null)
-		{
-			return false;
-		}
+    public bool Ai_HasAvailableSkill()
+    {
+        if(m_CurSelSkill == null)
+        {
+            return false;
+        }
 
-		return true;
-	}
+        return true;
+    }
 
-	public EBTStatus Ai_Attack()
-	{
-		Resp resp = m_Actor.CanUseSkill(m_CurSelSkill);
-		if (resp != Resp.TYPE_YES)
-		{
-			return EBTStatus.BT_SUCCESS;
-		}
+    public EBTStatus Ai_Attack()
+    {
+        Resp resp = m_Actor.CanUseSkill(m_CurSelSkill);
+        if (resp != Resp.TYPE_YES)
+        {
+            return EBTStatus.BT_SUCCESS;
+        }
 
-		m_Actor.DoPreSkill();
-		m_Actor.FaceTarget(0);
-		List<Actor> targets = m_Actor.Target == null ? null : new List<Actor>()
-		{
-			m_Actor.Target
-		};
-		GTNetworkSend.Instance.TryCastSkill(m_CurSelSkill.ID, m_Actor, targets, Vector3.zero);
+        m_Actor.DoPreSkill();
+        m_Actor.FaceTarget(0);
+        List<Actor> targets = m_Actor.Target == null ? null : new List<Actor>()
+        {
+            m_Actor.Target
+        };
+        GTNetworkSend.Instance.TryCastSkill(m_CurSelSkill.ID, m_Actor, targets, Vector3.zero);
 
-		if(m_Actor.FSM == FSMState.FSM_SKILL || m_Actor.FSM == FSMState.FSM_PRE_SKILL)
-		{
-			return EBTStatus.BT_RUNNING;
-		}
+        if(m_Actor.FSM == FSMState.FSM_SKILL || m_Actor.FSM == FSMState.FSM_PRE_SKILL)
+        {
+            return EBTStatus.BT_RUNNING;
+        }
 
-		return EBTStatus.BT_SUCCESS;
-	}
+        return EBTStatus.BT_SUCCESS;
+    }
 
-	public bool Ai_MoveToEnemy()
-	{
-		if(m_Actor.Target == null)
-		{
-			return false;
-		}
+    public bool Ai_MoveToEnemy()
+    {
+        if(m_Actor.Target == null)
+        {
+            return false;
+        }
 
-		if (GTTools.GetHorizontalDistance(m_Actor.Pos, m_Actor.Target.Pos) <= 1.0f)
-		{
-			if (m_Actor.IsMove())
-			{
-				m_ActorCommand.GetCmd<CommandIdle>().Do();
-			}
+        if (GTTools.GetHorizontalDistance(m_Actor.Pos, m_Actor.Target.Pos) <= 1.0f)
+        {
+            if (m_Actor.IsMove())
+            {
+                m_ActorCommand.GetCmd<CommandIdle>().Do();
+            }
 
-			return true;
-		}
+            return true;
+        }
 
-		if(!m_Actor.CanMove())
-		{
-			return false;
-		}
+        if(!m_Actor.CanMove())
+        {
+            return false;
+        }
 
-		//找不到目标，执行移动
-		m_ActorCommand.GetCmd<CommandMove>().Update(m_Actor.Target, () =>
-		{
-			m_ActorCommand.GetCmd<CommandIdle>().Do();
-		}).Do();
+        //找不到目标，执行移动
+        m_ActorCommand.GetCmd<CommandMove>().Update(m_Actor.Target, () =>
+        {
+            m_ActorCommand.GetCmd<CommandIdle>().Do();
+        }).Do();
 
-		return true;
-	}
+        return true;
+    }
 
-	public void Ai_FollowHost()
-	{
-		//己经太近
-		if (GTTools.GetHorizontalDistance(m_Actor.Pos, m_Actor.Host.Pos) <= 1.0f)
-		{
-			if (m_Actor.IsMove())
-			{
-				m_ActorCommand.GetCmd<CommandIdle>().Do();
-			}
+    public void Ai_FollowHost()
+    {
+        //己经太近
+        if (GTTools.GetHorizontalDistance(m_Actor.Pos, m_Actor.Host.Pos) <= 1.0f)
+        {
+            if (m_Actor.IsMove())
+            {
+                m_ActorCommand.GetCmd<CommandIdle>().Do();
+            }
 
-			return;
-		}
+            return;
+        }
 
-		if (!m_Actor.CanMove())
-		{
-			return ;
-		}
+        if (!m_Actor.CanMove())
+        {
+            return ;
+        }
 
-		if(m_Actor.Host == null)
-		{
-			return ;
-		}
+        if(m_Actor.Host == null)
+        {
+            return ;
+        }
 
-		//找不到目标，执行移动
-		m_ActorCommand.GetCmd<CommandMove>().Update(m_Actor.Host, () =>
-		{
-			m_ActorCommand.GetCmd<CommandIdle>().Do();
-		}).Do();
+        //找不到目标，执行移动
+        m_ActorCommand.GetCmd<CommandMove>().Update(m_Actor.Host, () =>
+        {
+            m_ActorCommand.GetCmd<CommandIdle>().Do();
+        }).Do();
 
-		return ;
-	}
+        return ;
+    }
 
-	public bool Ai_ToFarFromHost()
-	{
-		//己经太远
-		if (GTTools.GetHorizontalDistance(m_Actor.Pos, m_Actor.Host.Pos) >= 10.0f)
-		{
-			return true;
-		}
+    public bool Ai_ToFarFromHost()
+    {
+        //己经太远
+        if (GTTools.GetHorizontalDistance(m_Actor.Pos, m_Actor.Host.Pos) >= 10.0f)
+        {
+            return true;
+        }
 
-		return false;
-	}
-	public void Ai_CancelEnmey()
-	{
-		GTWorld.Instance.SetTarget(m_Actor, null);
-	}
+        return false;
+    }
+    public void Ai_CancelEnmey()
+    {
+        GTWorld.Instance.SetTarget(m_Actor, null);
+    }
 
 //     public Resp AIAutoTakeHpDrug()
 //     {

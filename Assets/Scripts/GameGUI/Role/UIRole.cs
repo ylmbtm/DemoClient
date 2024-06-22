@@ -52,7 +52,7 @@ public class UIRole : GTWindow
     protected override void OnAddButtonListener()
     {
         UIEventListener.Get(btnCreateRole).onClick = OnCreateRoleClick;
-        UIEventListener.Get(btnEnterGame).onClick =OnEnterGameClick;
+        UIEventListener.Get(btnEnterGame).onClick = OnEnterGameClick;
         UIEventListener.Get(btnRoll).onClick = OnRollClick;
         UIEventListener.Get(btnHero.gameObject).onDrag = OnHeroTextureDrag;
     }
@@ -193,7 +193,7 @@ public class UIRole : GTWindow
         mPlayer.CacheTransform.localEulerAngles = mRoleModelEuler;
         mPlayer.CacheTransform.localScale       = Vector3.one * 0.8f;
     }
-    
+
     private void ShowRandomName()
     {
         XCharacter role = DataDBSCharacter.GetDataById(mRoleDB.Carrer);
@@ -225,7 +225,7 @@ public class UIRole : GTWindow
         }
         else
         {
-            return db.Name;
+            return db.Name + UnityEngine.Random.Range(0, 10000).ToString();
         }
     }
 }
