@@ -42,7 +42,7 @@ public class GTCameraManager : GTMonoSingleton<GTCameraManager>
     {
         if (mFreeLook == null)
         {
-            mFreeLook = GTResourceManager.Instance.Load<GameObject>("Model/Other/FreeLook", true);
+            mFreeLook = GTResourceManager.Instance.Load<GameObject>("Model/Other/FreeLook.prefab", true);
             MainCamera = mFreeLook.GetComponentInChildren<Camera>();
             GTTools.SetTag(MainCamera.gameObject, GTTools.Tags.MainCamera);
             mFreeLook.transform.parent = transform;

@@ -55,7 +55,9 @@ public class EditorMenu : Editor
         }
         GameObject go = Selection.activeObject as GameObject;
         if (go == null)
+        {
             return;
+        }
         MeshFilter filter = go.GetComponent<MeshFilter>();
         if (filter == null || filter.sharedMesh == null)
         {
@@ -167,7 +169,10 @@ public class EditorMenu : Editor
         for (int i = 0; i < objs.Count; i++)
         {
             UnityEngine.GameObject go = (GameObject)objs[i];
-            if (go == null) return;
+            if (go == null)
+            {
+                return;
+            }
             GameObject clone = GameObject.Instantiate(go);
             UILabel[] labels = clone.GetComponentsInChildren<UILabel>(true);
             foreach (var current in labels)
@@ -282,7 +287,7 @@ public class EditorMenu : Editor
                 }
 
                 if (name.Contains("_") &&
-                    name.Contains("_0") == false)
+                        name.Contains("_0") == false)
                 {
                     layer.stateMachine.states[k].state.name = name.Replace("_", "_0");
                 }
@@ -293,7 +298,7 @@ public class EditorMenu : Editor
         {
             string paramName = ac.parameters[i].name;
             if (paramName.Contains("_") &&
-                paramName.Contains("_0") == false)
+                    paramName.Contains("_0") == false)
             {
                 Debug.LogError(paramName.Replace("_", "_0"));
 
@@ -307,7 +312,7 @@ public class EditorMenu : Editor
         AssetDatabase.Refresh();
     }
 
-    [MenuItem("Assets/提取新动画")]
+    [MenuItem("工具/提取新动画")]
     static void GetFilteredtoNewAnim()
     {
         UnityEngine.Object[] selectionAsset = Selection.GetFiltered(typeof(UnityEngine.Object), SelectionMode.Unfiltered);

@@ -13,7 +13,7 @@ public class GTWindowManager : GTSingleton<GTWindowManager>
     private Dictionary<EWindowType, int>            m_MinZOffsets      = new Dictionary<EWindowType, int>();
     private List<GTWindow>                          m_MutexStacks      = new List<GTWindow>();
     private int                                     m_ToggleGroupId    = 1;
-    private MaskBlack                               m_Black            = null; 
+    private MaskBlack                               m_Black            = null;
     private MaskBlackTransparent                    m_BlackTransparent = null;
     private MaskWhiteTransparent                    m_WhiteTransparent = null;
     private MaskBlur                                m_Blur             = null;
@@ -115,14 +115,14 @@ public class GTWindowManager : GTSingleton<GTWindowManager>
     }
 
     void RegisterWindow(EWindowID id, GTWindow win)
-    { 
+    {
         m_AllWindows[id] = win;
         win.ID = id;
     }
 
-    void FindPanels(GTWindow window,ref List<UIPanel> panels)
+    void FindPanels(GTWindow window, ref List<UIPanel> panels)
     {
-        if (window == null||window.Panel==null)
+        if (window == null || window.Panel == null)
         {
             return;
         }
@@ -192,12 +192,12 @@ public class GTWindowManager : GTSingleton<GTWindowManager>
                 for (int i = 0; i < m_OpenWindows.Count; i++)
                 {
                     if (m_OpenWindows[i].ShowMode == EWindowShowMode.SaveTarget &&
-                        w.ID == m_OpenWindows[i].TargetID)
+                            w.ID == m_OpenWindows[i].TargetID)
                     {
                         m_OpenWindows[i].SetActive(false);
                     }
                     if (m_OpenWindows[i].Type == EWindowType.Window &&
-                        m_OpenWindows[i].ShowMode == EWindowShowMode.DoNothing)
+                            m_OpenWindows[i].ShowMode == EWindowShowMode.DoNothing)
                     {
                         m_OpenWindows[i].Hide();
                     }
@@ -213,7 +213,7 @@ public class GTWindowManager : GTSingleton<GTWindowManager>
             for (int i = 0; i < m_OpenWindows.Count; i++)
             {
                 if (m_OpenWindows[i].ShowMode == EWindowShowMode.SaveTarget &&
-                    m_OpenWindows[i].TargetID == win.ID)
+                        m_OpenWindows[i].TargetID == win.ID)
                 {
                     m_OpenWindows[i].Hide();
                 }
@@ -225,8 +225,8 @@ public class GTWindowManager : GTSingleton<GTWindowManager>
                 last.SetActive(true);
                 for (int i = 0; i < m_OpenWindows.Count; i++)
                 {
-                    if (m_OpenWindows[i].ShowMode == EWindowShowMode.SaveTarget && 
-                        m_OpenWindows[i].TargetID == last.ID)
+                    if (m_OpenWindows[i].ShowMode == EWindowShowMode.SaveTarget &&
+                            m_OpenWindows[i].TargetID == last.ID)
                     {
                         m_OpenWindows[i].SetActive(true);
                     }
@@ -260,13 +260,14 @@ public class GTWindowManager : GTSingleton<GTWindowManager>
                     break;
             }
         }
-        LoadMask<MaskBlack>(needBlackWindow, "Guis/Mask/MaskBlack", ref m_Black);
-        LoadMask<MaskBlackTransparent>(needBlackTransparentWindow, "Guis/Mask/MaskBlackTransparent", ref m_BlackTransparent);
-        LoadMask<MaskWhiteTransparent>(needWhiteTransparentWindow, "Guis/Mask/MaskWhiteTransparent", ref m_WhiteTransparent);
-        LoadMask<MaskBlur>(needBlurWindow, "Guis/Mask/MaskBlur", ref m_Blur);
+        LoadMask<MaskBlack>(needBlackWindow, "Guis/Mask/MaskBlack.prefab", ref m_Black);
+        LoadMask<MaskBlackTransparent>(needBlackTransparentWindow, "Guis/Mask/MaskBlackTransparent.prefab", ref m_BlackTransparent);
+        LoadMask<MaskWhiteTransparent>(needWhiteTransparentWindow, "Guis/Mask/MaskWhiteTransparent.prefab", ref m_WhiteTransparent);
+        LoadMask<MaskBlur>(needBlurWindow, "Guis/Mask/MaskBlur.prefab", ref m_Blur);
     }
 
-    void LoadMask<T>(GTWindow needWindow, string path, ref T mask) where T : MaskGUI
+void LoadMask<T>(GTWindow needWindow, string path, ref T mask) where T :
+    MaskGUI
     {
         if (needWindow != null)
         {
@@ -291,7 +292,7 @@ public class GTWindowManager : GTSingleton<GTWindowManager>
     }
 
     void FindMask(ref GTWindow needWindow, GTWindow w)
-    {    
+    {
         if(w.IsVisable() == false)
         {
             return;
@@ -363,7 +364,8 @@ public class GTWindowManager : GTSingleton<GTWindowManager>
         return window;
     }
 
-    public T        GetWindow<T>(EWindowID windowID) where T : GTWindow
+public T        GetWindow<T>(EWindowID windowID) where T :
+    GTWindow
     {
         GTWindow baseWindow = null;
         m_AllWindows.TryGetValue(windowID, out baseWindow);

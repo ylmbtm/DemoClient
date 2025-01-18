@@ -79,9 +79,13 @@ public class GTWindow
         get
         {
             if (transform == null)
+            {
                 return null;
+            }
             else
+            {
                 return transform.GetComponent<UIPanel>();
+            }
         }
     }
 
@@ -114,7 +118,7 @@ public class GTWindow
             Debug.LogError("资源名为空");
             return false;
         }
-        string path = string.Format("Guis/{0}", Path);
+        string path = string.Format("Guis/{0}.prefab", Path);
         GameObject prefab = GTResourceManager.Instance.Load<GameObject>(path);
         if (prefab == null)
         {
@@ -155,8 +159,8 @@ public class GTWindow
     {
         TargetID = EWindowID.UINone;
         if (transform)
-        {           
-            GTResourceManager.Instance.Destroy(transform.gameObject);
+        {
+            GTResourceManager.Instance.DestroyObj(transform.gameObject);
         }
     }
 

@@ -7,7 +7,7 @@ public class UILoading : GTWindow
 {
     private string [] mBackTextures = new string[1]
     {
-        "Textures/Background/Background_1",
+        "Textures/Background/Background_1.png",
     };
 
     private UISlider  mProgressBar;
@@ -31,12 +31,12 @@ public class UILoading : GTWindow
 
     protected override void OnAddButtonListener()
     {
-        
+
     }
 
     protected override void OnAddHandler()
     {
-        
+
     }
 
     protected override void OnEnable()
@@ -49,7 +49,7 @@ public class UILoading : GTWindow
 
     protected override void OnDelHandler()
     {
-        
+
     }
 
     protected override void OnClose()

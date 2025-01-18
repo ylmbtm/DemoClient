@@ -79,7 +79,7 @@ public class UIRoleEquip : GTWindow
     {
         GTEventCenter.AddHandler(GTEventID.TYPE_CHANGE_FIGHTVALUE,      OnRecvChangeFightValue);
         GTEventCenter.AddHandler(GTEventID.TYPE_EQUIP_UPDATE_VIEW,      OnRecvUpdateEquipView);
-        
+
     }
 
     protected override void OnEnable()
@@ -99,7 +99,7 @@ public class UIRoleEquip : GTWindow
     {
         mEquipCells.Clear();
         mPropertyItems.Clear();
-       
+
         if (mRender != null)
         {
             mRender.Release();
@@ -116,7 +116,9 @@ public class UIRoleEquip : GTWindow
     private void OnHeroTextureDrag(GameObject go, Vector2 delta)
     {
         if (mAvatar == null && mAvatar.GetRootObj() != null)
+        {
             return;
+        }
         ESpin.Get(mAvatar.GetRootObj()).OnSpin(delta, 2);
     }
 
@@ -163,7 +165,7 @@ public class UIRoleEquip : GTWindow
 
         foreach (var equip in GTEquipData.Dict.Values)
         {
-            if (equip.IsUsing <=0)
+            if (equip.IsUsing <= 0)
             {
                 continue;
             }
@@ -175,7 +177,7 @@ public class UIRoleEquip : GTWindow
             }
 
             equipArray[equipDB1.Pos - 1] = equipDB1.Id;
-            
+
         }
 
         for (int i = 0; i < 8; i++)

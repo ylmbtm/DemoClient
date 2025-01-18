@@ -79,7 +79,7 @@ public class ActorAI : behaviac.Agent, IActorComponent
             return;
         }
         m_LastTime = Time.realtimeSinceStartup;
-        //this.btexec();
+        this.btexec();
     }
 
     public void Release()

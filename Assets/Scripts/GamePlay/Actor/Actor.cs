@@ -273,7 +273,7 @@ public class Actor : MonoBehaviour, IActor
         this.DBActor = ReadCfgActor.GetDataById(id);
         this.DBModel = ReadCfgActorModel.GetDataById(this.DBActor.Model);
         this.Scale   = Vector3.one * this.DBModel.ModelScale;
-        this.Obj     = GTPoolManager.Instance.GetObject(this.DBModel.Model);
+        this.Obj     = GTPoolManager.Instance.GetObject(this.DBModel.Model + ".prefab");
         this.Obj.name = "Body";
         this.Obj.transform.parent = CacheTransform;
         this.Obj.transform.localPosition = Vector3.zero;
@@ -287,7 +287,7 @@ public class Actor : MonoBehaviour, IActor
                 break;
             case EObjectType.OT_PET:
             case EObjectType.OT_PARTNER:
-			case EObjectType.OT_MOUNT:
+            case EObjectType.OT_MOUNT:
                 NGUITools.SetLayer(gameObject, GTLayer.LAYER_PET);
                 break;
             case EObjectType.OT_MONSTER:
@@ -420,9 +420,13 @@ public class Actor : MonoBehaviour, IActor
         {
             Actor actor = GTWorld.Characters[i];
             if (Match(affect, actor) == false)
+            {
                 continue;
+            }
             if (actor.CanBeSearch() != Resp.TYPE_YES)
+            {
                 continue;
+            }
             m_Targets.Add(actor);
         }
         switch(policy)
@@ -487,32 +491,32 @@ public class Actor : MonoBehaviour, IActor
         return list.Count > 0 ? list[0] : null;
     }
 
-	public int       GetCurrentHP()
-	{
-		return Attr.GetAttr(EAttrID.EA_HP);
-	}      
+    public int       GetCurrentHP()
+    {
+        return Attr.GetAttr(EAttrID.EA_HP);
+    }
 
-	public int       GetCurrentMP()
-	{
+    public int       GetCurrentMP()
+    {
         return Attr.GetAttr(EAttrID.EA_MP);
 
     }
 
-	public int       GetMaxHP()
-	{
+    public int       GetMaxHP()
+    {
         return Attr.GetAttr(EAttrID.EA_HP_MAX);
-    }      
+    }
 
-	public int       GetMaxMP()
-	{
+    public int       GetMaxMP()
+    {
         return Attr.GetAttr(EAttrID.EA_MP_MAX);
     }
 
     public float       GetHpPercent()
     {
         return GetCurrentHP() / GetMaxHP();
-    }      
-   
+    }
+
     public float       GetMpPercent()
     {
         return GetCurrentMP() / GetMaxMP();
@@ -679,7 +683,7 @@ public class Actor : MonoBehaviour, IActor
             ActorAnimation c1 = Get<ActorAnimation>();
             if (c1 != null)
             {
-                c1.Play("qicheng_"+animName, onFinish, isLoop, speed, lastTime);
+                c1.Play("qicheng_" + animName, onFinish, isLoop, speed, lastTime);
             }
 
             ActorAnimation c2 = MountActor.Get<ActorAnimation>();
@@ -758,17 +762,17 @@ public class Actor : MonoBehaviour, IActor
             c.SetVisable(false);
         }
     }
-		
+
     public void        ShowFlyWord(int chgHp, bool bCrit)
     {
-		Vector3 WordPos = Pos + Vector3.up * Height * 0.5f;
+        Vector3 WordPos = Pos + Vector3.up * Height * 0.5f;
 
         EFlyWordType tFlyType = EFlyWordType.TYPE_NONE;
 
 
-        if (IsNativeActor) 
-		{
-			if (chgHp > 0)
+        if (IsNativeActor)
+        {
+            if (chgHp > 0)
             {
                 tFlyType = bCrit ? EFlyWordType.TYPE_HOST_HEAL_CRIT : EFlyWordType.TYPE_HOST_HEAL_NORM;
             }
@@ -780,7 +784,7 @@ public class Actor : MonoBehaviour, IActor
             {
                 tFlyType = bCrit ? EFlyWordType.TYPE_HOST_HURT_CRIT : EFlyWordType.TYPE_HOST_HURT_NORM;
             }
-		}
+        }
         else
         {
             if (chgHp > 0)
@@ -1163,6 +1167,10 @@ public class Actor : MonoBehaviour, IActor
         {
             return;
         }
+
+        Transform bindTransform = this.Get<ActorAvator>().GetBindTransform(EBind.Body);
+        ActorEffect effectMgr = this.Get<ActorEffect>();
+        effectMgr.AddEffect((int)data.HitEffectID, bindTransform, 2.0f, false);
 
         switch ((EActionType)data.HitActionID)
         {
